@@ -18,7 +18,12 @@ function getTime() {
         }
     }
 
-    return `${date} ${timeOfDay}`
+    return `${date} ${timeOfDay}`;
+}
+
+function getDay() {
+    const currentDate = new Date();
+    return currentDate.toDateString();
 }
 
 const MusicPlayer = () => {
@@ -28,7 +33,7 @@ const MusicPlayer = () => {
         <div className="audio-container flex flex-column space-between">
             <h2 className='remove-margin google no-bold'>{getTime()}</h2>
             <h1 className={`remove-margin ${styles.titleText} google italic no-bold`}>NOW PLAYING</h1>
-            <h2></h2>
+            <h2 className='remove-margin google no-bold'>{getDay()}</h2>
             <div className={`thumbnail-container flex align-end justify-center auto google italic`}>
                 <p className={`${styles.pantherText} muted`}>PANTHER</p>
                 <img src="/pinkpantheress.jpeg" className={`${styles.thumbnailImageSize}`}></img>

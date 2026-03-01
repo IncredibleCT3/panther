@@ -7,6 +7,7 @@
   --bg:#06080f;
   --panel:#0b1020;
   --panel2:#0f1733;
+  --panel3: #eef2ff;
 
   --text:#eaf0ff;
   --muted:#a9b6d6;
@@ -110,6 +111,18 @@ body{
   background: var(--panel);
   border-radius: 10px;
   transition: background .25s ease, border-color .25s ease;
+  overflow: hidden;
+}
+
+.controls-container {
+  min-height: 150px;
+  width: 100%;
+  background: var(--panel3);
+}
+
+.thumbnail-container {
+  height: (100% - 100px);
+  width: 100%;
 }
 
 /* =========================
@@ -118,6 +131,10 @@ body{
 
 .flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .align-center {

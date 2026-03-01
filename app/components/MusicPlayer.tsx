@@ -1,16 +1,14 @@
 import React from 'react'
+import SideBar from './SideBar';
 
 const MusicPlayer = () => {
   return (
-      <div className="main-container">
+    <div className="main-container flex">
+        <SideBar />
         <div className="audio-container">
-
-        </div>
-
-        <div className="sideBar-container">
             
         </div>
-      </div>
+    </div>
   );
 }
 

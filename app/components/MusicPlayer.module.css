@@ -1,0 +1,11 @@
+.thumbnailImageSize {
+    height: 320px;
+    width: 360px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.pantherText {
+    transform: rotate(-90deg);
+    margin-bottom: 45px;
+    font-size: 32px;
+}

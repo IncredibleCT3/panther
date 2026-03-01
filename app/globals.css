@@ -141,6 +141,10 @@ body{
   align-items: center;
 }
 
+.align-end {
+  align-items: end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -167,4 +171,52 @@ body{
 
 .position-relative {
   position: relative;
+}
+
+.inherit {
+  height: inherit;
+}
+
+.google {
+  font-family: Google;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.auto {
+  margin: auto;
+}
+
+/* =========================
+   FONT FACES
+   ========================= */
+
+@font-face {
+  font-family: "Google";
+  src: url("/Google_Sans/static/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Google";
+  src: url("/Google_Sans/static/GoogleSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Google";
+  src: url("/Google_Sans/static/GoogleSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google";
+  src: url("/Google_Sans/static/GoogleSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
 }

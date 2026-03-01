@@ -193,6 +193,28 @@ body{
   margin: auto;
 }
 
+.muted {
+  color: var(--muted);
+  transition: color 0.4s ease;
+}
+
+.muted:hover {
+  color: var(--text);
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+@keyframes fadeIn {
+  from {
+    color: var(--muted);
+  }
+  to {
+    color: var(--text);
+  }
+}
+
 /* =========================
    FONT FACES
    ========================= */

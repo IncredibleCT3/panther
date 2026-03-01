@@ -8,7 +8,7 @@ const MusicPlayer = () => {
         <SideBar />
         <div className="audio-container flex flex-column space-between">
             <div className={`thumbnail-container flex align-end justify-center auto google italic`}>
-                <p className={styles.pantherText}>PANTHER</p>
+                <p className={`${styles.pantherText} muted`}>PANTHER</p>
                 <img src="/pinkpantheress.jpeg" className={styles.thumbnailImageSize}></img>
             </div>
             <div className="controls-container">

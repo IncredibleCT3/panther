@@ -115,7 +115,7 @@ body{
 }
 
 .controls-container {
-  min-height: 150px;
+  min-height: 160px;
   width: 100%;
   background: var(--panel3);
 }

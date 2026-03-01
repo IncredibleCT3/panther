@@ -3,10 +3,10 @@ import SideBar from './SideBar';
 
 const MusicPlayer = () => {
   return (
-    <div className="main-container flex">
+    <div className="main-container flex space-around">
         <SideBar />
         <div className="audio-container">
-            
+            Audio Player
         </div>
     </div>
   );

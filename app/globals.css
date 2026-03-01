@@ -97,6 +97,7 @@ body{
 .sideBar-container {
   height: calc(100vh - 40px);
   width: 500px;
+  margin-right: 20px;
   background: #0B1020;
   background: linear-gradient(180deg,rgba(11, 16, 32, 1) 0%, rgba(234, 240, 255, 1) 80%); 
   border-radius: 10px;
@@ -104,8 +105,10 @@ body{
 }
 
 .audio-container {
-  height: 100vh;
-  background: var(--bg);
+  height: calc(100vh - 40px);
+  width: 100%;
+  background: var(--panel);
+  border-radius: 10px;
   transition: background .25s ease, border-color .25s ease;
 }
 
@@ -125,6 +128,18 @@ body{
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
 .remove-margin {
   margin: 0;
 }
@@ -133,3 +148,6 @@ body{
   overflow: hidden;
 }
 
+.position-relative {
+  position: relative;
+}

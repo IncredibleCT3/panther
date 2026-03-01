@@ -5,3 +5,11 @@
 .marginRight {
     margin-right: 10px;
 }
+
+.earthPosition {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450;
+    opacity: 0.6;
+}

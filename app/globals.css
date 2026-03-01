@@ -1,26 +1,82 @@
-@import "tailwindcss";
+/* =========================
+   DEFAULT THEME (DARK)
+   ========================= */
+:root{
+  color-scheme: dark;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:#06080f;
+  --panel:#0b1020;
+  --panel2:#0f1733;
+
+  --text:#eaf0ff;
+  --muted:#a9b6d6;
+
+  --blue:#2f6bff;
+  --blue2:#58b6ff;
+
+  --stroke: rgba(180,200,255,.22);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* =========================
+   LIGHT THEME OVERRIDES
+   ========================= */
+[data-theme="light"]{
+  color-scheme: light;
+
+  --bg:#f7f9ff;
+  --panel:#ffffff;
+  --panel2:#eef2ff;
+
+  --text:#0b1020;
+  --muted:#4a587a;
+
+  --blue:#2f6bff;
+  --blue2:#58b6ff;
+
+  --stroke: rgba(0,0,0,.12);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* =========================
+   GLOBAL BASE STYLES
+   ========================= */
+body{
+  margin:0;
+  min-height:100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  transition: background .25s ease, color .25s ease;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================
+   Y2K COMPONENTS
+   ========================= */
+.y2k-card{
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 0 24px rgba(88,182,255,.18);
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.y2k-card2{
+  background: var(--panel2);
+  border: 1px solid var(--stroke);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 0 24px rgba(88,182,255,.18);
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.y2k-muted{
+  color: var(--muted);
+}
+
+.y2k-btn{
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
 }

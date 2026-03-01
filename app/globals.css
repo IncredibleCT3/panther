@@ -123,6 +123,7 @@ body{
 .thumbnail-container {
   height: (100% - 100px);
   width: 100%;
+  position: relative;
 }
 
 /* =========================
@@ -187,6 +188,10 @@ body{
 
 .italic {
   font-style: italic;
+}
+
+.no-bold {
+  font-weight: normal;
 }
 
 .auto {

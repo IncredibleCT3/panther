@@ -8,4 +8,12 @@
     transform: rotate(-90deg);
     margin-bottom: 45px;
     font-size: 32px;
+    position: absolute;
+    left: 180px;
+}
+
+.titleText {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid rgba(234, 240, 255, 0.1);
 }

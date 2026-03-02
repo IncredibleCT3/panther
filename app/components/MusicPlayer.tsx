@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from './SideBar';
 import styles from './MusicPlayer.module.css'
+import MillisecondCounter from './MillisecondCounter';
 
 function getTime() {
     let count=0;
@@ -69,7 +70,7 @@ const MusicPlayer = () => {
                 <h1 className={`remove-margin ${styles.titleText} google italic no-bold`}>NOW PLAYING</h1>
                 <div className={`flex align-end center-self`}>
                     <h2 className={`remove-margin google no-bold`}>{`${getDayOfWeek()} ${getTime()[0]}`}</h2>
-                    <p className={`remove-margin google ${styles.small} ${styles.milliMargins}`}>{`${getTime()[1]}`}</p>
+                    <MillisecondCounter milliSeconds={getTime()[1]}/>
                 </div>
             </div>
             <div className={`thumbnail-container flex align-end justify-center auto google italic`}>

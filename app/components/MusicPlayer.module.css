@@ -28,15 +28,6 @@
   mix-blend-mode: screen; /* TRY: screen, overlay, soft-light */
 }
 
-.small {
-    font-size: 12px;
-}
-
-.milliMargins {
-    margin-left: 2px;
-    margin-bottom: 4px;
-}
-
 .headerContainer {
     padding: 20px;
     border-bottom: 2px solid rgba(234, 240, 255, 0.1);

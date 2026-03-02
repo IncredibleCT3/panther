@@ -162,6 +162,14 @@ body{
   justify-content: space-around;
 }
 
+.center-self {
+  align-self: anchor-center;
+}
+
+.gap {
+  gap: 10px
+}
+
 .remove-margin {
   margin: 0;
 }

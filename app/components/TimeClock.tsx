@@ -29,9 +29,9 @@ const TimeClock = ({ tickMs = 1000 }: Props) => {
   return (
     <div className="flex align-end center-self">
       <h2 className={`remove-margin google no-bold ${styles.marginLeft}`}>{`${day} ${hhmm}`}</h2>
-      <p className={`remove-margin google ${styles.small} ${styles.marginRight} ${styles.secondsMargins}`}>
+      {/* <p className={`remove-margin google ${styles.small} ${styles.marginRight} ${styles.secondsMargins}`}>
         {ss}
-      </p>
+      </p> */}
     </div>
   );
 };

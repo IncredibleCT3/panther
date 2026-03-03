@@ -115,9 +115,15 @@ body{
 }
 
 .controls-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 160px;
   width: 100%;
-  background: var(--panel3);
+  background: #A9B6D6;
+  /* background: var(--panel3); */
+  /* background: #0B1020;
+  background: linear-gradient(180deg, rgba(11, 16, 32, 1) 10%, rgba(234, 240, 255, 1) 300%); */
 }
 
 .thumbnail-container {

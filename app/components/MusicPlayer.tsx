@@ -2,6 +2,7 @@ import React from 'react'
 import SideBar from './SideBar';
 import styles from './MusicPlayer.module.css'
 import TimeClock from './TimeClock';
+import TextBox from './TextBox';
 
 function getDay() {
     const currentDate = new Date();
@@ -50,7 +51,7 @@ const MusicPlayer = () => {
                 <img src="/pinkpantheress.jpeg" className={`${styles.thumbnailImageSize}`}></img>
             </div>
             <div className="controls-container">
-
+                <TextBox />
             </div>
         </div>
     </div>

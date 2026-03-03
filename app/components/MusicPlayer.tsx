@@ -1,27 +1,7 @@
 import React from 'react'
 import SideBar from './SideBar';
 import styles from './MusicPlayer.module.css'
-import MillisecondCounter from './MillisecondCounter';
-
-function getTime() {
-    let count=0;
-    const currentDate = new Date();
-    let date = currentDate.toLocaleTimeString();
-    const timeOfDay = date.split(" ")[1];
-    let milliSeconds;
-
-    for (let i=0; i<=date.length; i++) {
-        if (date[i] === ":") {
-            count++;
-            if (count === 2) {
-                milliSeconds = date.slice(i+1, i+3);
-                date = date.slice(0, i);
-                break;
-            }
-        }
-    }
-    return [`${date}`, `${milliSeconds}`];
-}
+import TimeClock from './TimeClock';
 
 function getDay() {
     const currentDate = new Date();
@@ -55,23 +35,15 @@ function getDay() {
     return `${dayNumber}.${monthAbbrev}.${year}`;
 }
 
-function getDayOfWeek() {
-    const currentDate = new Date();
-    return currentDate.toLocaleString('en-US', {weekday: 'short',}).toUpperCase();
-}
-
 const MusicPlayer = () => {
   return (
     <div className="main-container flex space-around">
         <SideBar />
         <div className="audio-container flex flex-column space-between">
-            <div className={`flex space-evenly align-end gap ${styles.headerContainer}`}>
-                <h2 className='remove-margin google no-bold center-self'>{getDay()}</h2>
-                <h1 className={`remove-margin ${styles.titleText} google italic no-bold`}>NOW PLAYING</h1>
-                <div className={`flex align-end center-self`}>
-                    <h2 className={`remove-margin google no-bold`}>{`${getDayOfWeek()} ${getTime()[0]}`}</h2>
-                    <MillisecondCounter milliSeconds={getTime()[1]}/>
-                </div>
+            <div className={`flex justify-center align-end gap ${styles.headerContainer}`}>
+                <h2 className='remove-margin google no-bold center-self text-center'>{getDay()}</h2>
+                <h1 className={`remove-margin ${styles.titleText} google italic no-bold flex1`}>NOW PLAYING</h1>
+                <TimeClock />
             </div>
             <div className={`thumbnail-container flex align-end justify-center auto google italic`}>
                 <p className={`${styles.pantherText} muted`}>PANTHER</p>

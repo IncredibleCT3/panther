@@ -31,4 +31,6 @@
 .headerContainer {
     padding: 20px;
     border-bottom: 2px solid rgba(234, 240, 255, 0.1);
+    display: grid;
+    grid-template-columns: 220px 1fr 220px; /* pick your sizes */
 }

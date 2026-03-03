@@ -170,6 +170,10 @@ body{
   gap: 10px
 }
 
+.flex1 {
+  flex: 1;
+}
+
 .remove-margin {
   margin: 0;
 }
@@ -200,6 +204,10 @@ body{
 
 .no-bold {
   font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .auto {

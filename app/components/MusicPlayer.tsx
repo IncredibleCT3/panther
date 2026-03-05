@@ -48,10 +48,10 @@ const MusicPlayer = () => {
             </div>
             <div className={`thumbnail-container flex align-end justify-center auto google italic`}>
                 <p className={`${styles.pantherText} muted`}>PANTHER</p>
-                <img src="/pinkpantheress.jpeg" className={`${styles.thumbnailImageSize}`}></img>
+                <img src="/kendrick.jpeg" className={`${styles.thumbnailImageSize}`}></img>
             </div>
             <div className="controls-container">
-                <TextBox />
+                <h2>PLAYLIST</h2>
             </div>
         </div>
     </div>

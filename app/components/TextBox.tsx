@@ -3,7 +3,7 @@ import styles from './TextBox.module.css'
 
 const TextBox = () => {
   return (
-    <div className={`${styles.container} ${styles.y2kPanel}`}>TextBox</div>
+    <div className={`${styles.container} ${styles.y2kPanel} flex align-center justify-center ${styles.text}`}>ENJOY THE TUNES</div>
   )
 }
 

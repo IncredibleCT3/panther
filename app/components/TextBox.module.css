@@ -1,7 +1,13 @@
 .container {
     height: 130px;
     width: 400px;
+    overflow: hidden;
+    position: relative;
+    white-space: no-wrap;
+}
 
+.text {
+    font-size: 64px;
 }
 
 .y2kPanel {
@@ -11,16 +17,32 @@
   color: rgba(255,255,255,0.92);
 
   /* Base blue plastic + soft highlight arcs */
-  background:
-    radial-gradient(120% 140% at 30% 20%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.00) 55%),
+background:
+  radial-gradient(120% 140% at 18% 10%,
+    rgba(247,249,255,0.38) 0%,
+    rgba(247,249,255,0) 55%
+  ),
+
+  radial-gradient(140% 140% at 70% 120%,
+    rgba(11,16,32,0.35) 0%,   /* ↓ was 0.62 */
+    rgba(11,16,32,0) 65%
+  ),
+
+  linear-gradient(180deg,
+    rgba(234,240,255,0.30) 0%,
+    rgba(169,182,214,0.22) 30%,
+    rgba(11,16,32,0.20) 75%,  /* softer mid fade */
+    rgba(11,16,32,0.35) 100%  /* much lighter anchor */
+  );
+    /* radial-gradient(120% 140% at 30% 20%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.00) 55%),
     radial-gradient(120% 140% at 70% 80%, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.00) 60%),
     linear-gradient(180deg, rgba(120,210,255,0.55) 0%, rgba(40,140,220,0.55) 40%, rgba(20,90,190,0.55) 100%),
-    linear-gradient(135deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.00) 35%, rgba(255,255,255,0.08) 100%);
+    linear-gradient(135deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.00) 35%, rgba(255,255,255,0.7) 100%); */
 
   /* Bevel + inner edge */
   box-shadow:
-    0 18px 40px rgba(0,0,0,0.45),
-    inset 0 1px 0 rgba(255,255,255,0.35),
+    0 18px 40px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.15),
     inset 0 -1px 0 rgba(0,0,0,0.25),
     inset 0 0 0 1px rgba(255,255,255,0.10);
 }
@@ -64,9 +86,9 @@
     radial-gradient(90% 80% at 50% 25%, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 55%),
     radial-gradient(120% 120% at 50% 100%, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 60%);
 
-  box-shadow:
+  /* box-shadow:
     inset 0 0 0 1px rgba(0, 200, 255, 0.18),
-    0 0 24px rgba(0, 180, 255, 0.18);
+    0 0 24px rgba(0, 180, 255, 0.18); */
 
   opacity: 0.9;
 }

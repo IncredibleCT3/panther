@@ -112,6 +112,8 @@ body{
   border-radius: 10px;
   transition: background .25s ease, border-color .25s ease;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .controls-container {
@@ -121,6 +123,8 @@ body{
   min-height: 160px;
   width: 100%;
   background: #A9B6D6;
+  background-blend-mode:multiply;
+  background-image: url("/marble.jpg");
   /* background: var(--panel3); */
   /* background: #0B1020;
   background: linear-gradient(180deg, rgba(11, 16, 32, 1) 10%, rgba(234, 240, 255, 1) 300%); */
